@@ -1,5 +1,5 @@
 def isprime(n):
-    for x in range(2, int((n ** 0.5)+1)):
-        if n % x == 0:
+    for x in range(2, int((n ** 0.5)+1)): # checks for every number below its square root
+        if n % x == 0: # divisibility check
             return False
     return True
